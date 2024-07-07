@@ -1,5 +1,5 @@
-class UrlStrings {
-  UrlStrings._();
+class Links {
+  Links._();
 
   // -- Diseases Articles From Internet
   static const String depression = 'https://www.who.int/news-room/fact-sheets/detail/depression';

@@ -19,7 +19,7 @@ class DiseasesList extends StatelessWidget {
               diseaseName: 'Depression',
               diseaseDescription:
                   'Characterized by feelings of sadness, hopelessness, and difficulty with thinking, memory, eating and sleeping.',
-              url: UrlStrings.depression,
+              url: Links.depression,
             ),
 
             // Bipolar Disorder
@@ -27,7 +27,7 @@ class DiseasesList extends StatelessWidget {
               diseaseName: 'Bipolar Disorder',
               diseaseDescription:
                   'Marked by intense shifts in mood, energy levels, thinking patterns, and behavior, including hypomanic/manic and depressive episodes.',
-              url: UrlStrings.bipolarDisorder,
+              url: Links.bipolarDisorder,
             ),
 
             // Premenstrual Dysphoric Disorder
@@ -35,7 +35,7 @@ class DiseasesList extends StatelessWidget {
               diseaseName: 'Premenstrual Dysphoric Disorder',
               diseaseDescription:
                   'A condition that causes severe emotional symptoms, such as anxiety, irritability, and mood swings, in the days leading up to a woman\'s menstrual period.',
-              url: UrlStrings.premenstrualDysphoricDisorder,
+              url: Links.premenstrualDysphoricDisorder,
             ),
 
             // Disruptive Mood Dysregulation Disorder
@@ -43,7 +43,7 @@ class DiseasesList extends StatelessWidget {
               diseaseName: 'Disruptive Mood Dysregulation Disorder',
               diseaseDescription:
                   'A condition characterized by intense, frequent temper outbursts and a persistently irritable or angry mood.',
-              url: UrlStrings.disruptiveMoodDysregulationDisorder,
+              url: Links.disruptiveMoodDysregulationDisorder,
             ),
 
             // Postpartum Depression
@@ -51,7 +51,7 @@ class DiseasesList extends StatelessWidget {
               diseaseName: 'Postpartum Depression',
               diseaseDescription:
                   'A type of depression that occurs in women and people assigned female at birth after childbirth, characterized by feelings of sadness, hopelessness, and anxiety.',
-              url: UrlStrings.postpartumDepression,
+              url: Links.postpartumDepression,
             ),
 
             // Persistent Depressive Disorder
@@ -59,7 +59,7 @@ class DiseasesList extends StatelessWidget {
               diseaseName: 'Persistent Depressive Disorder',
               diseaseDescription:
                   'A chronic form of depression that lasts for at least two years, with symptoms that may occasionally lessen in severity.',
-              url: UrlStrings.persistentDepressiveDisorder,
+              url: Links.persistentDepressiveDisorder,
             ),
 
             // Seasonal Affective Disorder
@@ -67,7 +67,7 @@ class DiseasesList extends StatelessWidget {
               diseaseName: 'Seasonal Affective Disorder',
               diseaseDescription:
                   'A type of depression that occurs during certain seasons of the year, typically winter, characterized by feelings of sadness, lethargy, and social withdrawal.',
-              url: UrlStrings.seasonalAffectiveDisorder,
+              url: Links.seasonalAffectiveDisorder,
             ),
           ],
         ),
