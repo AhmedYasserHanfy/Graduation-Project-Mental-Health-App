@@ -7,7 +7,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
 import 'package:mental_health/common/widgets/close_app.dart';
 import 'package:mental_health/data/repositories/user/user_repository.dart';
-import 'package:mental_health/features/app/screens/splash/screens/splash_screen.dart';
+import 'package:mental_health/features/splash/screens/splash_screen.dart';
 import 'package:mental_health/features/authentication/screens/login/login.dart';
 import 'package:mental_health/features/authentication/screens/signup/verify_email.dart';
 import 'package:mental_health/utils/exceptions/firebase_auth_exceptions.dart';
@@ -191,8 +191,6 @@ class AuthenticationRepository extends GetxController {
       throw 'Something went wrong, Please try again.';
     }
   }
-
-  /// [Facebook Authentication] - Facebook
 
 /* --------------------- Logout & Delete User --------------------- */
 

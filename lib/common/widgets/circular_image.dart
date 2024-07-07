@@ -1,6 +1,7 @@
 import 'package:cached_network_image/cached_network_image.dart';
 import 'package:flutter/material.dart';
-import 'package:mental_health/features/app/screens/home/screens/home_screen.dart';
+
+import 'loaders/shimmer_effect.dart';
 
 class CircularImage extends StatelessWidget {
   const CircularImage({

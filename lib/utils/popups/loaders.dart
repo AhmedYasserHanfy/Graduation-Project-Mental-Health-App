@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+import 'package:lottie/lottie.dart';
+import 'package:mental_health/utils/constants/image_strings.dart';
 
 class Loaders {
   static hideSnackBar() =>
@@ -98,6 +100,59 @@ class Loaders {
           ],
         );
       },
+    );
+  }
+
+  static doneUpload({required fileName}) {
+    showDialog(
+      context: Get.context!,
+      builder: (builder) {
+        return Dialog(
+          child: Column(
+            mainAxisSize: MainAxisSize.min,
+            children: [
+              Lottie.asset(Images.uploadDone, repeat: false),
+              Padding(
+                padding: const EdgeInsets.symmetric(horizontal: 16.0),
+                child: Text(
+                  '$fileName File successfully picked.',
+                  style: const TextStyle(fontSize: 16),
+                  textAlign: TextAlign.center,
+                ),
+              ),
+              const SizedBox(height: 16),
+            ],
+          ),
+        );
+      },
+    );
+  }
+
+  static warningPopup(
+    String title,
+    String subtitle,
+    String confirmText,
+    Function()? confirmAction,
+  ) {
+    Get.defaultDialog(
+      contentPadding: const EdgeInsets.all(16),
+      title: title,
+      middleText: subtitle,
+      confirm: ElevatedButton(
+        onPressed: confirmAction,
+        style: ElevatedButton.styleFrom(
+          backgroundColor: Colors.red,
+          side: const BorderSide(color: Colors.red),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 24.0),
+          child: Text(confirmText),
+        ),
+      ),
+      cancel: OutlinedButton(
+        onPressed: () => Navigator.of(Get.overlayContext!).pop(),
+        child: const Text('Cancel'),
+      ),
     );
   }
 }

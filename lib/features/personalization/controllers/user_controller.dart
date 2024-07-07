@@ -85,31 +85,6 @@ class UserController extends GetxController {
     }
   }
 
-  // Show a popup message to confirm deleting account
-  void deleteAccountWarningPopup() {
-    Get.defaultDialog(
-      contentPadding: const EdgeInsets.all(16),
-      title: 'Delete Account',
-      middleText:
-          'Are you sure you want to delete your account permanently? This action is not reversible and all of your data will be removed permanently.',
-      confirm: ElevatedButton(
-        onPressed: () async => deleteUserAccount(),
-        style: ElevatedButton.styleFrom(
-          backgroundColor: Colors.red,
-          side: const BorderSide(color: Colors.red),
-        ),
-        child: const Padding(
-          padding: EdgeInsets.symmetric(horizontal: 24.0),
-          child: Text('Delete'),
-        ),
-      ),
-      cancel: OutlinedButton(
-        onPressed: () => Navigator.of(Get.overlayContext!).pop(),
-        child: const Text('Cancel'),
-      ),
-    );
-  }
-
   // Delete user account
   void deleteUserAccount() async {
     try {
@@ -190,11 +165,11 @@ class UserController extends GetxController {
   }
 
   // Upload Profile Image
-  uploadUserProfilePicture() async {
+  uploadUserProfilePicture(ImageSource source) async {
     try {
       final image = await ImagePicker().pickImage(
-        source: ImageSource.gallery,
-        imageQuality: 70,
+        source: source,
+        imageQuality: 100,
         maxHeight: 512,
         maxWidth: 512,
       );

@@ -2,15 +2,26 @@ class Images {
   Images._();
 
   // -- Main app logo
-  static const String appLogo = 'assets/images/logo/app_logo.png';
+  static const String appLogo = 'assets/images/logo/app-logo.png';
 
-  // -- Social logos for authentication
+  // -- Result logo
+  static const String resultLogo = 'assets/images/logo/psychology.png';
+
+  // -- Result logo
+  static const String userGuideLogo = 'assets/images/logo/user-guide.png';
+
+  // -- University & faculty logos
+  static const String universityLogo = 'assets/images/logo/university-logo.png';
+  static const String facultyLogo = 'assets/images/logo/faculty-logo.png';
+
+  // -- Google logo for authentication
   static const String google = 'assets/images/authentication/google.png';
 
   // -- Animation
   static const String forgetPassword = 'assets/animations/Forget-Password.json';
   static const String loading = 'assets/animations/Loading-Dots.json';
   static const String done = 'assets/animations/success.json';
+  static const String uploadDone = 'assets/animations/complete.json';
   static const String heart = 'assets/animations/heart.json';
   static const String lightProcessing = 'assets/animations/Light-Processing.json';
   static const String darkProcessing = 'assets/animations/Dark-Processing.json';
@@ -20,6 +31,10 @@ class Images {
 
   // -- Team members
   static const String ahmed = 'assets/images/members/ahmed.jpg';
+  static const String adel = 'assets/images/members/adel.jpg';
+  static const String soliman = 'assets/images/members/soliman.jpg';
+  static const String gasser = 'assets/images/members/gasser.jpg';
+  static const String abdelBadi = 'assets/images/members/abd-elbadi.jpg';
 
   // -- Theme
   static const String darkMode = 'assets/images/themes/dark.png';
@@ -36,17 +51,10 @@ class Images {
   static const String diseasesIcon = 'assets/icons/brain.png';
 
   // -- User profile avatar
-  static const String maleDoctor = 'assets/images/logo/doctor_male.png';
+  static const String doctor = 'assets/images/user/doctor.png';
 
-  // -- University & faculty
-  static const String universityLogo = 'assets/images/logo/university_logo.png';
-  static const String facultyLogo = 'assets/images/logo/faculty_logo.png';
-
-  // -- Result logo
-  static const String resultLogo = 'assets/images/logo/psychology.png';
-
-  // -- Upload logo
-  static const String uploadLogo = 'assets/images/logo/upload.png';
+  // -- Upload icon
+  static const String uploadIcon = 'assets/icons/upload.png';
 
   // -- Emotions
   static const String happy = 'assets/images/emotions/happy.png';

@@ -1,16 +1,19 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:mental_health/common/widgets/buttons/custom_outlined_button.dart';
 import 'package:mental_health/features/personalization/controllers/user_controller.dart';
 import 'package:mental_health/features/personalization/screens/profile/change_name_screen.dart';
 import 'package:mental_health/features/personalization/screens/profile/change_phone_number_screen.dart';
+import 'package:mental_health/features/personalization/screens/profile/change_user_name_screen.dart';
 import 'package:mental_health/features/personalization/screens/profile/widgets/profile_menu.dart';
 import 'package:mental_health/features/personalization/screens/profile/widgets/profile_picture.dart';
 import 'package:mental_health/features/personalization/screens/profile/widgets/section_heading.dart';
 import 'package:mental_health/utils/formatters/formatter.dart';
 
 import '../../../../data/repositories/authentication/authentication_repository.dart';
+import '../../../../utils/popups/loaders.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});
@@ -45,7 +48,7 @@ class ProfileScreen extends StatelessWidget {
               ProfileMenu(
                 title: 'Username',
                 value: controller.user.value.userName,
-                onPressed: () {},
+                onPressed: () => Get.to(() => const ChangeUserNameScreen()),
               ),
 
               /// Divider
@@ -60,7 +63,10 @@ class ProfileScreen extends StatelessWidget {
               ProfileMenu(
                 title: 'User Id',
                 value: controller.user.value.id,
-                onPressed: () {},
+                onPressed: () {
+                  final value = ClipboardData(text: controller.user.value.id);
+                  Clipboard.setData(value);
+                },
                 icon: Iconsax.copy,
               ),
               ProfileMenu(
@@ -83,12 +89,22 @@ class ProfileScreen extends StatelessWidget {
               // Buttons
               CustomOutlinedButton(
                 text: 'Delete Account',
-                onTap: () => controller.deleteAccountWarningPopup(),
+                onTap: () => Loaders.warningPopup(
+                  'Delete Account',
+                  'Are you sure you want to delete your account permanently? This action is not reversible and all of your data will be removed permanently.',
+                  'Delete',
+                  () async => controller.deleteUserAccount(),
+                ),
               ),
               const SizedBox(height: 16),
               CustomOutlinedButton(
                 text: 'Log out',
-                onTap: () => AuthenticationRepository.instance.logout(),
+                onTap: () => Loaders.warningPopup(
+                  'Log out',
+                  'Are you sure you want to Logout? You can login again using this account or a different account.',
+                  'Log out',
+                  () => AuthenticationRepository.instance.logout(),
+                ),
               ),
             ],
           ),

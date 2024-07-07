@@ -17,7 +17,7 @@ class CustomOutlinedButton extends StatelessWidget {
         overlayColor: MaterialStateProperty.all(Colors.red.shade800),
         minimumSize: MaterialStateProperty.all(const Size(300, 50)),
         shape: MaterialStateProperty.all(
-          RoundedRectangleBorder(borderRadius: BorderRadius.circular(14.0)),
+          RoundedRectangleBorder(borderRadius: BorderRadius.circular(50.0)),
         ),
       ),
       onPressed: onTap,
