@@ -68,7 +68,6 @@ flutter:
 
   assets:
     - assets/icons/
-    - assets/model/
     - assets/animations/
     - assets/images/user/
     - assets/images/logo/
