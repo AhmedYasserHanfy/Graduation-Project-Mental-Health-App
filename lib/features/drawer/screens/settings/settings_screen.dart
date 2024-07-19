@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
 
 import '../../../../common/widgets/refresh.dart';
+import '../../../../utils/constants/image_strings.dart';
 
 class SettingsScreen extends StatelessWidget {
   const SettingsScreen({super.key});

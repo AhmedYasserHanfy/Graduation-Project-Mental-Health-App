@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mental_health/data/repositories/authentication/authentication_repository.dart';
-import 'package:mental_health/features/authentication/controllers/signup/verify_email_controller.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
 
 import '../../../../common/widgets/buttons/custom_elevated_button.dart';
+import '../../../../data/repositories/authentication/authentication_repository.dart';
+import '../../../../utils/constants/image_strings.dart';
+import '../../controllers/signup/verify_email_controller.dart';
 
 class VerifyEmailScreen extends StatelessWidget {
   const VerifyEmailScreen({super.key, this.email});

@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:mental_health/features/authentication/controllers/login/login_controller.dart';
-import 'package:mental_health/features/personalization/controllers/user_controller.dart';
 
+
+import '../../features/authentication/controllers/login/login_controller.dart';
 import '../../features/authentication/controllers/signup/signup_controller.dart';
+import '../../features/personalization/controllers/user_controller.dart';
 
 class InputFieldStyle {
   static InputDecoration inputFieldStyle(

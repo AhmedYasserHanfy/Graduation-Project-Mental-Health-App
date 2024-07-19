@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/features/authentication/screens/signup/signup.dart';
+
+import '../../signup/signup.dart';
 
 class LoginCreateAccount extends StatelessWidget {
   const LoginCreateAccount({

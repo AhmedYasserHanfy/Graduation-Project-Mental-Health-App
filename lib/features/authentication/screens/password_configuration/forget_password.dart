@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mental_health/features/authentication/controllers/forget_password/forget_password_controller.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
-import 'package:mental_health/utils/validators/validation.dart';
 
 import '../../../../common/styles/input_field_style.dart';
 import '../../../../common/widgets/buttons/custom_elevated_button.dart';
+import '../../../../utils/constants/image_strings.dart';
+import '../../../../utils/validators/validation.dart';
+import '../../controllers/forget_password/forget_password_controller.dart';
 
 class ForgetPassword extends StatelessWidget {
   const ForgetPassword({super.key});
@@ -41,6 +41,7 @@ class ForgetPassword extends StatelessWidget {
               Form(
                 key: controller.forgetPasswordFormKey,
                 child: TextFormField(
+                  keyboardType: TextInputType.emailAddress,
                   controller: controller.email,
                   validator: Validator.validateEmail,
                   decoration: InputFieldStyle.inputFieldStyle(

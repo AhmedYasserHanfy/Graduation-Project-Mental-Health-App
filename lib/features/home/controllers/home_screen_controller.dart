@@ -2,10 +2,10 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:file_picker/file_picker.dart';
-import 'package:mental_health/utils/popups/full_screen_loader.dart';
-import 'package:mental_health/utils/popups/loaders.dart';
 
 import '../../../utils/constants/image_strings.dart';
+import '../../../utils/popups/full_screen_loader.dart';
+import '../../../utils/popups/loaders.dart';
 import '../../diagnosis/screens/analytic_screen.dart';
 
 class HomeScreenController extends GetxController {
@@ -18,7 +18,7 @@ class HomeScreenController extends GetxController {
   Future<void> pickAudioFile() async {
     FilePickerResult? result = await FilePicker.platform.pickFiles(
       type: FileType.custom,
-      allowedExtensions: ['mp3', 'wav'],
+      allowedExtensions: ['wav'],
     );
 
     if (result != null) {
@@ -41,7 +41,7 @@ class HomeScreenController extends GetxController {
       Timer.periodic(const Duration(seconds: 10), (timer) async {
         await FullScreenLoader.stopLoading();
         timer.cancel();
-        Get.to(() => const AnalyticScreen(emotion: 'happy'));
+        Get.to(() => const AnalyticScreen());
       });
     }
   }

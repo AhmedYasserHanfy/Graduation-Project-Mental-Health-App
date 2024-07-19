@@ -2,7 +2,8 @@ import 'package:flutter/services.dart';
 import 'package:connectivity_plus/connectivity_plus.dart';
 import 'dart:async';
 import 'package:get/get.dart';
-import 'package:mental_health/utils/popups/loaders.dart';
+
+import '../popups/loaders.dart';
 
 class NetworkManager extends GetxController {
   static NetworkManager get instance => Get.find();

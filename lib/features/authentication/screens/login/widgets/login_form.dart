@@ -1,10 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/features/authentication/controllers/login/login_controller.dart';
-import 'package:mental_health/features/authentication/screens/password_configuration/forget_password.dart';
+
 import '../../../../../common/styles/input_field_style.dart';
 import '../../../../../common/widgets/buttons/custom_elevated_button.dart';
 import '../../../../../utils/validators/validation.dart';
+import '../../../controllers/login/login_controller.dart';
+import '../../password_configuration/forget_password.dart';
 
 class LoginForm extends StatelessWidget {
   const LoginForm({

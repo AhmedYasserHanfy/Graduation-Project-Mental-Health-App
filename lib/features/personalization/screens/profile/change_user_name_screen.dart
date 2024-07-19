@@ -2,12 +2,12 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mental_health/features/personalization/controllers/update_user_name_controller.dart';
 
 import '../../../../common/styles/input_field_style.dart';
 import '../../../../common/widgets/buttons/custom_elevated_button.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/validators/validation.dart';
+import '../../controllers/update_user_name_controller.dart';
 
 class ChangeUserNameScreen extends StatelessWidget {
   const ChangeUserNameScreen({super.key});

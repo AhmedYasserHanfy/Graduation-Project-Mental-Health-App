@@ -2,18 +2,18 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:mental_health/common/widgets/buttons/custom_outlined_button.dart';
-import 'package:mental_health/features/personalization/controllers/user_controller.dart';
-import 'package:mental_health/features/personalization/screens/profile/change_name_screen.dart';
-import 'package:mental_health/features/personalization/screens/profile/change_phone_number_screen.dart';
-import 'package:mental_health/features/personalization/screens/profile/change_user_name_screen.dart';
-import 'package:mental_health/features/personalization/screens/profile/widgets/profile_menu.dart';
-import 'package:mental_health/features/personalization/screens/profile/widgets/profile_picture.dart';
-import 'package:mental_health/features/personalization/screens/profile/widgets/section_heading.dart';
-import 'package:mental_health/utils/formatters/formatter.dart';
+import 'package:test/features/personalization/screens/profile/widgets/profile_menu.dart';
+import 'package:test/features/personalization/screens/profile/widgets/profile_picture.dart';
+import 'package:test/features/personalization/screens/profile/widgets/section_heading.dart';
 
+import '../../../../common/widgets/buttons/custom_outlined_button.dart';
 import '../../../../data/repositories/authentication/authentication_repository.dart';
+import '../../../../utils/formatters/formatter.dart';
 import '../../../../utils/popups/loaders.dart';
+import '../../controllers/user_controller.dart';
+import 'change_name_screen.dart';
+import 'change_phone_number_screen.dart';
+import 'change_user_name_screen.dart';
 
 class ProfileScreen extends StatelessWidget {
   const ProfileScreen({super.key});

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mental_health/features/drawer/providers/theme_provider.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
 import 'package:provider/provider.dart';
+
+import '../../../../utils/constants/image_strings.dart';
+import '../../providers/theme_provider.dart';
 
 class ChangeThemeScreen extends StatelessWidget {
   const ChangeThemeScreen({super.key});

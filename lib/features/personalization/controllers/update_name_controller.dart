@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/data/repositories/user/user_repository.dart';
-import 'package:mental_health/features/personalization/controllers/user_controller.dart';
-import 'package:mental_health/features/personalization/screens/profile/profile_screen.dart';
-import 'package:mental_health/utils/popups/loaders.dart';
+import 'package:test/features/personalization/controllers/user_controller.dart';
 
+import '../../../data/repositories/user/user_repository.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/helpers/network_manager.dart';
 import '../../../utils/popups/full_screen_loader.dart';
+import '../../../utils/popups/loaders.dart';
+import '../screens/profile/profile_screen.dart';
 
 class UpdateNameController extends GetxController {
   static UpdateNameController get instance => Get.find();

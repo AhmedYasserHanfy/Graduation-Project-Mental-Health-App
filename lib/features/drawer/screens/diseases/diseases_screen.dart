@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mental_health/common/widgets/refresh.dart';
-import 'package:mental_health/features/drawer/screens/diseases/widgets/disease_card.dart';
-import 'package:mental_health/utils/constants/url_strings.dart';
+import 'package:test/features/drawer/screens/diseases/widgets/disease_card.dart';
+
+import '../../../../common/widgets/refresh.dart';
+import '../../../../utils/constants/url_strings.dart';
 
 class DiseasesList extends StatelessWidget {
   const DiseasesList({super.key});

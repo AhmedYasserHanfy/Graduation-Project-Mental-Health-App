@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mental_health/common/widgets/refresh.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
-import 'package:mental_health/features/drawer/screens/team_members/widgets/member_container.dart';
+import 'package:test/features/drawer/screens/team_members/widgets/member_container.dart';
+
+import '../../../../common/widgets/refresh.dart';
+import '../../../../utils/constants/image_strings.dart';
 
 class TeamMembersScreen extends StatelessWidget {
   const TeamMembersScreen({super.key});

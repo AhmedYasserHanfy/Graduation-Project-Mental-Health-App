@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:mental_health/app.dart';
-import 'package:mental_health/data/repositories/authentication/authentication_repository.dart';
-import 'package:mental_health/firebase_options.dart';
-import 'package:mental_health/features/drawer/providers/theme_provider.dart';
 import 'package:provider/provider.dart';
+import 'app.dart';
+import 'data/repositories/authentication/authentication_repository.dart';
+import 'features/drawer/providers/theme_provider.dart';
+import 'firebase_options.dart';
 
 Future<void> main() async {
   // Widgets binding

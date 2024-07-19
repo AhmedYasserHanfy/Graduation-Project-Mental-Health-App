@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mental_health/features/splash/controllers/splash_screen_controller.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
+
+import '../../../utils/constants/image_strings.dart';
+import '../controllers/splash_screen_controller.dart';
 
 class SplashScreen extends StatelessWidget {
   const SplashScreen({super.key});

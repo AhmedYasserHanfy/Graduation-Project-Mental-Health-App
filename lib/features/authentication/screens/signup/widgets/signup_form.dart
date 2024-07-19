@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
-import 'package:mental_health/utils/validators/validation.dart';
 
 import '../../../../../common/styles/input_field_style.dart';
 import '../../../../../common/widgets/buttons/custom_elevated_button.dart';
+import '../../../../../utils/validators/validation.dart';
 import '../../../controllers/signup/signup_controller.dart';
 
 class SignupForm extends StatelessWidget {

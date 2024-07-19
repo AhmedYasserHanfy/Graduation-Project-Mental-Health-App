@@ -2,15 +2,15 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 
 import 'package:get/get.dart';
-import 'package:mental_health/data/repositories/authentication/authentication_repository.dart';
-import 'package:mental_health/data/repositories/user/user_repository.dart';
-import 'package:mental_health/features/authentication/screens/signup/verify_email.dart';
-import 'package:mental_health/features/personalization/models/user_model.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
-import 'package:mental_health/utils/popups/full_screen_loader.dart';
-import 'package:mental_health/utils/popups/loaders.dart';
 
+import '../../../../data/repositories/authentication/authentication_repository.dart';
+import '../../../../data/repositories/user/user_repository.dart';
+import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/helpers/network_manager.dart';
+import '../../../../utils/popups/full_screen_loader.dart';
+import '../../../../utils/popups/loaders.dart';
+import '../../../personalization/models/user_model.dart';
+import '../../screens/signup/verify_email.dart';
 
 class SignupController extends GetxController {
   static SignupController get instance => Get.find();

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:mental_health/common/widgets/refresh.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
-import 'package:mental_health/utils/formatters/formatter.dart';
+
+import '../../../../common/widgets/refresh.dart';
+import '../../../../utils/constants/image_strings.dart';
+import '../../../../utils/formatters/formatter.dart';
 
 class AboutScreen extends StatelessWidget {
   AboutScreen({super.key});
@@ -93,6 +94,28 @@ class AboutScreen extends StatelessWidget {
                       ),
                     ),
                     TextSpan(text: 'like depression.'),
+                  ],
+                ),
+              ),
+            ),
+            const Padding(
+              padding: EdgeInsets.only(top: 32.0, left: 16.0, right: 16.0),
+              child: Text.rich(
+                textAlign: TextAlign.center,
+                TextSpan(
+                  text: 'We used',
+                  style: TextStyle(fontSize: 18),
+                  children: <TextSpan>[
+                    TextSpan(
+                      text: ' Depression ',
+                      style: TextStyle(
+                        color: Colors.teal,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                    TextSpan(
+                        text:
+                            'as indicator because its the most use case for any mental health issue.'),
                   ],
                 ),
               ),

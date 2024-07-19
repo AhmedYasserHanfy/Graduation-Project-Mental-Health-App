@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:provider/provider.dart';
 
-import 'package:mental_health/bindings/general_bindings.dart';
-import 'package:mental_health/features/drawer/providers/theme_provider.dart';
+import 'bindings/general_bindings.dart';
+import 'features/drawer/providers/theme_provider.dart';
 
 class MentalHealthApp extends StatelessWidget {
   const MentalHealthApp({super.key});

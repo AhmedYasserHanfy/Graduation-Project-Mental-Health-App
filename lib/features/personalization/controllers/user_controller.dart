@@ -2,16 +2,16 @@ import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:mental_health/data/repositories/authentication/authentication_repository.dart';
-import 'package:mental_health/data/repositories/user/user_repository.dart';
-import 'package:mental_health/features/authentication/screens/login/login.dart';
-import 'package:mental_health/features/personalization/models/user_model.dart';
-import 'package:mental_health/features/personalization/screens/profile/re_authenticate_user_login_screen.dart';
-import 'package:mental_health/utils/popups/loaders.dart';
 
+import '../../../data/repositories/authentication/authentication_repository.dart';
+import '../../../data/repositories/user/user_repository.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../../../utils/helpers/network_manager.dart';
 import '../../../utils/popups/full_screen_loader.dart';
+import '../../../utils/popups/loaders.dart';
+import '../../authentication/screens/login/login.dart';
+import '../models/user_model.dart';
+import '../screens/profile/re_authenticate_user_login_screen.dart';
 
 class UserController extends GetxController {
   static UserController get instance => Get.find();

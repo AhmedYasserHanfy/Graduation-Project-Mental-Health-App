@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mental_health/features/personalization/screens/profile/widgets/change_name_form.dart';
+import 'package:test/features/personalization/screens/profile/widgets/change_name_form.dart';
 
 import '../../../../utils/constants/image_strings.dart';
 

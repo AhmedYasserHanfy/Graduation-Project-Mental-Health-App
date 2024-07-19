@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:mental_health/features/authentication/screens/signup/widgets/signup_form.dart';
+import 'package:test/features/authentication/screens/signup/widgets/signup_form.dart';
 
 import '../../../../common/widgets/login_signup/form_divider.dart';
 import '../../../../common/widgets/login_signup/social_buttons.dart';

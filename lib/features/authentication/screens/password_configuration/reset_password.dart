@@ -2,11 +2,11 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mental_health/features/authentication/controllers/forget_password/forget_password_controller.dart';
-import 'package:mental_health/features/authentication/screens/login/login.dart';
 
 import '../../../../common/widgets/buttons/custom_elevated_button.dart';
 import '../../../../utils/constants/image_strings.dart';
+import '../../controllers/forget_password/forget_password_controller.dart';
+import '../login/login.dart';
 
 class ResetPassword extends StatelessWidget {
   const ResetPassword({super.key, required this.email});

@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/common/widgets/buttons/custom_elevated_button.dart';
-import 'package:mental_health/features/personalization/controllers/user_controller.dart';
 
 import '../../../../common/styles/input_field_style.dart';
+import '../../../../common/widgets/buttons/custom_elevated_button.dart';
 import '../../../../utils/validators/validation.dart';
+import '../../controllers/user_controller.dart';
 
 class ReAuthLoginForm extends StatelessWidget {
   const ReAuthLoginForm({super.key});

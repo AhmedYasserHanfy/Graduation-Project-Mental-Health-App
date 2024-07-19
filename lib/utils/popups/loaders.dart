@@ -2,7 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:lottie/lottie.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
+
+import '../constants/image_strings.dart';
 
 class Loaders {
   static hideSnackBar() =>

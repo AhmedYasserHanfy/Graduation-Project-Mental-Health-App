@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/data/repositories/authentication/authentication_repository.dart';
-import 'package:mental_health/features/authentication/screens/password_configuration/reset_password.dart';
-import 'package:mental_health/utils/popups/loaders.dart';
 
+import '../../../../data/repositories/authentication/authentication_repository.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/helpers/network_manager.dart';
 import '../../../../utils/popups/full_screen_loader.dart';
+import '../../../../utils/popups/loaders.dart';
+import '../../screens/password_configuration/reset_password.dart';
 
 class ForgetPasswordController extends GetxController {
   static ForgetPasswordController get instance => Get.find();

@@ -1,7 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:mental_health/features/authentication/controllers/login/login_controller.dart';
 
+import '../../../features/authentication/controllers/login/login_controller.dart';
 import '../../../utils/constants/image_strings.dart';
 import '../square_tile.dart';
 

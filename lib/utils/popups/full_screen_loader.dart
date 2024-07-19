@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/common/widgets/loaders/animation_loader.dart';
+
+import '../../common/widgets/loaders/animation_loader.dart';
 
 class FullScreenLoader {
   static void openLoadingDialog(String text, String animation) {

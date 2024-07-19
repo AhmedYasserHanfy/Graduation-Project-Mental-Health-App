@@ -1,16 +1,10 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
 import 'package:percent_indicator/circular_percent_indicator.dart';
 
 class DiseaseProbability extends StatelessWidget {
-  const DiseaseProbability({
-    super.key,
-    required this.diseaseName,
-    required this.diseaseProbability,
-  });
+  const DiseaseProbability({super.key, required this.diseaseProbability});
 
-  final String diseaseName;
-  final double diseaseProbability;
+  final int diseaseProbability;
 
   @override
   Widget build(BuildContext context) {
@@ -41,11 +35,11 @@ class DiseaseProbability extends StatelessWidget {
               ),
             ),
           ),
-          Padding(
-            padding: const EdgeInsets.symmetric(horizontal: 8.0),
+          const Padding(
+            padding: EdgeInsets.symmetric(horizontal: 8.0),
             child: Text(
-              '${diseaseName.capitalizeFirst} Probability',
-              style: const TextStyle(color: Colors.white),
+              'Depression Probability',
+              style: TextStyle(color: Colors.white),
             ),
           ),
         ],

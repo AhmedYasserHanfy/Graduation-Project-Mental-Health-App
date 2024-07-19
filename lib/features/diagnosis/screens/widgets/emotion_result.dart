@@ -13,7 +13,7 @@ class EmotionResult extends StatelessWidget {
       return Images.happy;
     } else if (emotion.toLowerCase() == 'sad') {
       return Images.sad;
-    } else if (emotion.toLowerCase() == 'fear') {
+    } else if (emotion.toLowerCase() == 'fearful') {
       return Images.fear;
     } else if (emotion.toLowerCase() == 'angry') {
       return Images.angry;
@@ -23,7 +23,7 @@ class EmotionResult extends StatelessWidget {
       return Images.calm;
     } else if (emotion.toLowerCase() == 'neutral') {
       return Images.neutral;
-    } else if (emotion.toLowerCase() == 'surprise') {
+    } else if (emotion.toLowerCase() == 'surprised') {
       return Images.surprised;
     }
     return null;

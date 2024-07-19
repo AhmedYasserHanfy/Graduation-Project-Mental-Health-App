@@ -2,9 +2,11 @@ import 'dart:async';
 
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/data/repositories/authentication/authentication_repository.dart';
-import 'package:mental_health/features/authentication/screens/signup/signup_success.dart';
-import 'package:mental_health/utils/popups/loaders.dart';
+
+import '../../../../data/repositories/authentication/authentication_repository.dart';
+import '../../../../utils/popups/loaders.dart';
+import '../../screens/signup/signup_success.dart';
+
 
 class VerifyEmailController extends GetxController {
   static VerifyEmailController get instance => Get.find();

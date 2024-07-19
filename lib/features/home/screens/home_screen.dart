@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/features/home/controllers/home_screen_controller.dart';
-import 'package:mental_health/features/drawer/widgets/drawer.dart';
-import 'package:mental_health/features/home/screens/widgets/user_profile_avatar.dart';
-import 'package:mental_health/utils/constants/image_strings.dart';
+import 'package:test/features/home/screens/widgets/user_profile_avatar.dart';
 
 import '../../../common/widgets/buttons/custom_elevated_button.dart';
+import '../../../utils/constants/image_strings.dart';
+import '../../drawer/widgets/drawer.dart';
+import '../controllers/home_screen_controller.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});

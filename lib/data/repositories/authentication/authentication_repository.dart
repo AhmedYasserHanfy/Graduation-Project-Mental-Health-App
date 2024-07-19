@@ -5,19 +5,19 @@ import 'package:flutter_native_splash/flutter_native_splash.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
 import 'package:google_sign_in/google_sign_in.dart';
-import 'package:mental_health/common/widgets/close_app.dart';
-import 'package:mental_health/data/repositories/user/user_repository.dart';
-import 'package:mental_health/features/splash/screens/splash_screen.dart';
-import 'package:mental_health/features/authentication/screens/login/login.dart';
-import 'package:mental_health/features/authentication/screens/signup/verify_email.dart';
-import 'package:mental_health/utils/exceptions/firebase_auth_exceptions.dart';
-import 'package:mental_health/utils/exceptions/firebase_exceptions.dart';
-import 'package:mental_health/utils/exceptions/format_exceptions.dart';
-import 'package:mental_health/utils/exceptions/platform_exceptions.dart';
 
+import '../../../common/widgets/close_app.dart';
+import '../../../features/authentication/screens/login/login.dart';
+import '../../../features/authentication/screens/signup/verify_email.dart';
+import '../../../features/splash/screens/splash_screen.dart';
 import '../../../utils/constants/image_strings.dart';
+import '../../../utils/exceptions/firebase_auth_exceptions.dart';
+import '../../../utils/exceptions/firebase_exceptions.dart';
+import '../../../utils/exceptions/format_exceptions.dart';
+import '../../../utils/exceptions/platform_exceptions.dart';
 import '../../../utils/popups/full_screen_loader.dart';
 import '../../../utils/popups/loaders.dart';
+import '../user/user_repository.dart';
 
 class AuthenticationRepository extends GetxController {
   static AuthenticationRepository get instance => Get.find();

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:mental_health/features/personalization/controllers/user_controller.dart';
+import 'package:test/features/personalization/controllers/user_controller.dart';
 
 import '../../../data/repositories/user/user_repository.dart';
 import '../../../utils/constants/image_strings.dart';

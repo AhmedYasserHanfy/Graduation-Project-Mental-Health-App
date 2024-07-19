@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:get_storage/get_storage.dart';
-import 'package:mental_health/features/personalization/controllers/user_controller.dart';
-import 'package:mental_health/utils/popups/full_screen_loader.dart';
 
 import '../../../../data/repositories/authentication/authentication_repository.dart';
 import '../../../../utils/constants/image_strings.dart';
 import '../../../../utils/helpers/network_manager.dart';
+import '../../../../utils/popups/full_screen_loader.dart';
 import '../../../../utils/popups/loaders.dart';
+import '../../../personalization/controllers/user_controller.dart';
 
 class LoginController extends GetxController {
   static LoginController get instance => Get.find();
